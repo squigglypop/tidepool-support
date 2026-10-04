@@ -1,0 +1,35 @@
+name: Bug report
+description: Something in Tidepool isn't working
+labels: [bug]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Where did it happen?
+      options: [Confluence, Jira]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Diagram source (optional)
+      description: The Mermaid code that fails. Remove anything confidential first.
+      render: text
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Filled in automatically when you use "Report a problem" in Tidepool. Otherwise, leave blank.
+      render: text
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag an image here.

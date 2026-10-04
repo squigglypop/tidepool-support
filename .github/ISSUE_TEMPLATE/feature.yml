@@ -1,0 +1,14 @@
+name: Feature request
+description: Suggest something Tidepool should do
+labels: [feature]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Tidepool to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help you with?
